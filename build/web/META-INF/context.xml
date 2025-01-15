@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Context path="/TestProject"/>-->
+<!--<Context path=""/>-->
+<Context path="/TestProject">
+  <Resource name="jdbc/Test_DB"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+          driverClassName="org.postgresql.Driver"
+          url="jdbc:postgresql://localhost:5433/Test_DB"
+          username="postgres"
+          password="postgres"
+          maxActive="20"
+          maxIdle="10"
+          minIdle="5"
+          maxWait="10000"/>
+</Context>
